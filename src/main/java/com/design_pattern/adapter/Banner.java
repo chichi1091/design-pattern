@@ -7,11 +7,11 @@ public class Banner {
         this.string = string;
     }
 
-    public void showWithParen() {
+    protected void showWithParen() {
         System.out.println("[" + string + "]");
     }
 
-    public void showWithAster() {
+    protected void showWithAster() {
         System.out.println("*" + string + "*");
     }
 }

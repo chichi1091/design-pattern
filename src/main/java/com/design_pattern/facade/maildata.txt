@@ -1,0 +1,3 @@
+user1@hoge.com=User1
+user2@hoge.com=User2
+user3@hoge.com=User3

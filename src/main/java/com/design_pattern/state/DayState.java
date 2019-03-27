@@ -1,7 +1,5 @@
 package com.design_pattern.state;
 
-import javax.naming.Context;
-
 public class DayState implements State {
     private static DayState singleton = new DayState();
 

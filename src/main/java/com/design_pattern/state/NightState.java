@@ -1,7 +1,5 @@
 package com.design_pattern.state;
 
-import com.sun.xml.internal.xsom.impl.scd.Step;
-
 public class NightState implements State{
     private static NightState singleton = new NightState();
 

@@ -42,21 +42,6 @@ public class SafeFrame extends Frame implements ActionListener, Context {
         buttonExit.addActionListener(this);
     }
 
-    public void actionPreformed(ActionEvent e) {
-        System.out.println(e.toString());
-        if(e.getSource() == buttonUse) {
-            state.doUse(this);
-        } else if(e.getSource() == buttonAlarm) {
-            state.doAlarm(this);
-        } else if(e.getSource() == buttonPhone) {
-            state.doPhone(this);
-        } else if(e.getSource() == buttonExit) {
-            System.exit(0);
-        } else {
-            System.out.println("?" + e.getSource().toString());
-        }
-    }
-
     @Override
     public void setClock(int hour) {
         String clockString = "現在の時刻は";
@@ -86,6 +71,18 @@ public class SafeFrame extends Frame implements ActionListener, Context {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        System.out.println(e.toString());
+        if(e.getSource() == buttonUse) {
+            state.doUse(this);
+        } else if(e.getSource() == buttonAlarm) {
+            state.doAlarm(this);
+        } else if(e.getSource() == buttonPhone) {
+            state.doPhone(this);
+        } else if(e.getSource() == buttonExit) {
+            System.exit(0);
+        } else {
+            System.out.println("?" + e.getSource().toString());
+        }
 
     }
 }

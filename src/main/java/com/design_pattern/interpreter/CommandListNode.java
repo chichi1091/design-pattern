@@ -18,6 +18,7 @@ public class CommandListNode extends Node {
                 throw new ParseException("Missing end");
             } else if("end".equals(context.getCurrentToken())) {
                 context.skipToken("end");
+                break;
             } else {
                 Node commandNode = new CommandNode();
                 commandNode.parse(context);
